@@ -1,7 +1,6 @@
 package shelter;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -43,17 +42,13 @@ public class VirtualPetShelter {
         showPetNamesAndStats();
         }
     }
-    public void playWithAPet() {
-
-    }
 
     public void playWithAPet(String name) {
-        VirtualPet idlePet = getPet(name);{
+        VirtualPet idlePet = getPet(name);
             idlePet.updateFields(-1, 2, -1, -1);
             System.out.println("Current stats:");
             showPetNamesAndStats();
             }
-        }
 
     public void showPetNamesAndStats() {
         System.out.printf("%-10s %-15s %-15s %-12s %-10s %n ","Name ", "Nutrition", "Happiness", "Energy", "Water");

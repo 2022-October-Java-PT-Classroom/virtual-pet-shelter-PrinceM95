@@ -47,6 +47,7 @@ public class VirtualPetShelterApp {
                 System.out.println("You'd like to play with a pet, please choose one:");
                 myShelter.showPetNamesAndDescriptions();
                 String petName = input.nextLine();
+//                myShelter.playWithAPet(petName);
 
                 if (petName.equals("Henry")) {
                     System.out.println();
