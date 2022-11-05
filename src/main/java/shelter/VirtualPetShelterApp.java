@@ -5,15 +5,14 @@ import java.util.Scanner;
 
 public class VirtualPetShelterApp {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         String userChoice;
 
         VirtualPetShelter myShelter = new VirtualPetShelter();
-        VirtualPet pet = new VirtualPet("Henry", "He's always happy", 50, 50, 50, 50);
-        VirtualPet pet1 = new VirtualPet("Huey", "He's a bit shy", 50, 50, 50, 50);
-        VirtualPet pet2 = new VirtualPet("Hugh", "Loves to eat", 50, 50, 50, 50);
-        VirtualPet pet3 = new VirtualPet("Halle", "Enjoys sleeping", 50, 50, 50, 50);
+        VirtualPet pet = new VirtualPet("Henry", "is always happy", 50, 50, 50, 50);
+        VirtualPet pet1 = new VirtualPet("Huey", "is a bit shy", 50, 50, 50, 50);
+        VirtualPet pet2 = new VirtualPet("Hugh", "loves to eat", 50, 50, 50, 50);
+        VirtualPet pet3 = new VirtualPet("Halle", "enjoys sleeping", 50, 50, 50, 50);
 
         myShelter.add(pet);
         myShelter.add(pet1);
