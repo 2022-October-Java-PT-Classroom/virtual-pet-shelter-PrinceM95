@@ -68,22 +68,21 @@ public class VirtualPet {
 
 
     public void feedAll(){
-        this.nutrition += 2;
-        this.nutrition += 1;
+        this.nutrition += 5;
     }
 
 
     public void waterAll(){
-        this.water += 2;
-        this.energy += 1;
+        this.water += 5;
+        this.energy += 5;
     }
 
 
     public void tick() {
-        nutrition += -1;
-        happiness += -1;
-        energy += -1;
-        water += -1;
+        nutrition -= 1;
+        happiness -= 1;
+        energy -= 1;
+        water -= 1;
     }
 
     public void showPetStats() {

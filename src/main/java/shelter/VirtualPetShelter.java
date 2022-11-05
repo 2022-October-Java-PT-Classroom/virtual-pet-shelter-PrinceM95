@@ -29,8 +29,6 @@ public class VirtualPetShelter {
         System.out.println("Okay, you'd like to feed the pets:");
         for(VirtualPet pet : pets.values()){
         pet.feedAll();
-        System.out.println("Every pet thanked you for feeding them.\n");
-        showPetNamesAndStats();
         }
     }
 
@@ -38,17 +36,18 @@ public class VirtualPetShelter {
         System.out.println("Okay, you'd like to water the pets:");
         for (VirtualPet pet : pets.values()) {
         pet.waterAll();
-        System.out.println("Every pet thanked you for watering them.\n");
-        showPetNamesAndStats();
         }
     }
 
     public void playWithAPet(String name) {
-        VirtualPet idlePet = getPet(name);
-            idlePet.updateFields(-1, 2, -1, -1);
-            System.out.println("Current stats:");
-            showPetNamesAndStats();
-            }
+        VirtualPet idlePet = null;
+        try {
+            idlePet = getPet(name);
+            idlePet.updateFields(-1, 5, -1, -1);
+        } catch (Exception e) {
+            System.out.println("Pet not found, please try again \n" );
+        }
+    }
 
     public void showPetNamesAndStats() {
         System.out.printf("%-10s %-15s %-15s %-12s %-10s %n ","Name ", "Nutrition", "Happiness", "Energy", "Water");
