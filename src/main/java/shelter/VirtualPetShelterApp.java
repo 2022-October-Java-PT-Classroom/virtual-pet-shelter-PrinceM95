@@ -35,7 +35,6 @@ public class VirtualPetShelterApp {
             System.out.println("6: Quit");
             userChoice = input.nextLine();
 
-
             if (userChoice.equals("1")) {
                 myShelter.feedAllPets();
                 System.out.println("Every pet thanked you for feeding them.\n");
