@@ -68,6 +68,13 @@ public class VirtualPetShelterTest {
         assertEquals(52, pet.getHappiness());
     }
 
+    @Test
+    public void shouldBeAbleToReturnPetName(){
+        underTest.add(pet);
+        underTest.getPet("Henry");
+        assertEquals("Henry", "Henry");
+    }
+
 }
 
 
