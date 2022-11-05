@@ -2,7 +2,6 @@ package shelter;
 
 public class VirtualPet {
 
-    //instance variables
     private String name;
     private int nutrition;
     private int happiness;
@@ -10,8 +9,6 @@ public class VirtualPet {
     private String description;
     private int water;
 
-
-    //constructors
     public VirtualPet(String name, int nutrition, int happiness, int energy, int water) {
         this.nutrition = nutrition;
         this.happiness = happiness;
@@ -23,15 +20,19 @@ public class VirtualPet {
     public VirtualPet(String name, String description) {
         this.name = name;
         this.description = description;
+        this.nutrition = 50;
+        this.happiness = 50;
+        this.energy = 50;
+        this.water = 50;
     }
 
     public VirtualPet(String name, String description, int nutrition, int happiness, int energy, int water) {
         this.name = name;
         this.description = description;
-        this.nutrition = 50;
-        this.happiness = 50;
-        this.energy = 50;
-        this.water = 50;
+        this.nutrition = nutrition;
+        this.happiness = happiness;
+        this.energy = energy;
+        this.water = water;
     }
 
     public String getName() {
@@ -59,7 +60,7 @@ public class VirtualPet {
     }
 
 
-    public void updateFields (int nutrition, int happiness, int energy, int water) {
+    public void updateFields(int nutrition, int happiness, int energy, int water) {
         this.nutrition += nutrition;
         this.happiness += happiness;
         this.energy += energy;
@@ -67,12 +68,12 @@ public class VirtualPet {
     }
 
 
-    public void feedAll(){
+    public void feedAll() {
         this.nutrition += 5;
     }
 
 
-    public void waterAll(){
+    public void waterAll() {
         this.water += 5;
         this.energy += 5;
     }

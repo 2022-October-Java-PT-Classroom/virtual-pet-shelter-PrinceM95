@@ -65,11 +65,11 @@ public class VirtualPetShelterTest {
     public void shouldBeAbleToPlayWithAPet() {
         underTest.add(pet);
         underTest.playWithAPet("Henry");
-        assertEquals(52, pet.getHappiness());
+        assertEquals(55, pet.getHappiness());
     }
 
     @Test
-    public void shouldBeAbleToReturnPetName(){
+    public void shouldBeAbleToReturnPetName() {
         underTest.add(pet);
         underTest.getPet("Henry");
         assertEquals("Henry", "Henry");

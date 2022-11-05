@@ -11,9 +11,9 @@ public class VirtualPetShelterApp {
 
         VirtualPetShelter myShelter = new VirtualPetShelter();
         VirtualPet pet = new VirtualPet("Henry", "He's always happy", 50, 50, 50, 50);
-        VirtualPet pet1 = new VirtualPet("Huey", "He's a bit shy",50,50,50,50);
-        VirtualPet pet2 = new VirtualPet("Hugh", "Loves to eat",50, 50, 50,50);
-        VirtualPet pet3 = new VirtualPet("Halle", "Enjoys sleeping",50, 50, 50,50);
+        VirtualPet pet1 = new VirtualPet("Huey", "He's a bit shy", 50, 50, 50, 50);
+        VirtualPet pet2 = new VirtualPet("Hugh", "Loves to eat", 50, 50, 50, 50);
+        VirtualPet pet3 = new VirtualPet("Halle", "Enjoys sleeping", 50, 50, 50, 50);
 
         myShelter.add(pet);
         myShelter.add(pet1);
@@ -73,7 +73,7 @@ public class VirtualPetShelterApp {
                 vp.tick();
             }
 
-        }while(!userChoice.equals("6"));
+        } while (!userChoice.equals("6"));
         System.out.println("Thanks for stopping by. Take care!");
     }
 }
