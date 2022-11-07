@@ -6,7 +6,7 @@ Build upon your Virtual Pet project that allows you to care for multiple pets in
 
 ## Details
 
-In our Virtual Pet project, we created a pet from a `VirtualPet` class and set up a game loop for user interaction in `VirtualPetApp` class. For this project, we will be creating a `VirtualPetShelter` class that allows the user to house and care for a collection of pets. The ideal way to organize your code would be to have your `VirtualPetApp` call methods from `VirtualPetShelter` which interact with our `VirtualPet` objects. 
+In our Virtual Pet project, we created a pet from a `shelter.VirtualPet` class and set up a game loop for user interaction in `VirtualPetApp` class. For this project, we will be creating a `shelter.VirtualPetShelter` class that allows the user to house and care for a collection of pets. The ideal way to organize your code would be to have your `VirtualPetApp` call methods from `shelter.VirtualPetShelter` which interact with our `shelter.VirtualPet` objects. 
 
 We encourage you to use TDD on this project, but it is not required to attain a passing grade. If you feel trying to incorporate testing would be a barrier to your completing the project before the deadline, forgo it. 
 
@@ -74,7 +74,7 @@ Tommy's Boredom would be lowered, the tick() method effects every pet in the she
 	- [ ] implements a *game loop*.
 	- [ ] asks for user input.
 	- [ ] writes output to the console.
-	- [ ] calls `VirtualPetShelter`'s `tick` method after each interaction
+	- [ ] calls `shelter.VirtualPetShelter`'s `tick` method after each interaction
 
 - Available user interface actions should include (at minimum)…
 	- [ ] feeding all the pets
@@ -85,12 +85,12 @@ Tommy's Boredom would be lowered, the tick() method effects every pet in the she
 
 	(*Hint: you can use tab characters ("\t") to align console output in columns.*)
 
-### VirtualPetShelter class
+### shelter.VirtualPetShelter class
 
 - [ ] include appropriate instance variable(s) to store the pets who reside at the shelter
 - [ ] include methods that:
 	- [ ] return a `Collection` of all of the pets in the shelter
-	- [ ] return a specific `VirtualPet` given its name
+	- [ ] return a specific `shelter.VirtualPet` given its name
 	- [ ] allow intake of a homeless pet (adding a pet to the shelter)
 	- [ ] allow adoption of a homeless pet (removing a pet from the shelter)
 	- [ ] feed all of the pets in the shelter
@@ -98,7 +98,7 @@ Tommy's Boredom would be lowered, the tick() method effects every pet in the she
 	- [ ] plays (or performs some other interaction(s)) with an individual pet in the shelter
 - [ ] include a `tick` method that calls the `tick` method for each of the pets in the shelter, updating their needs
 
-### VirtualPet class
+### shelter.VirtualPet class
 	
 In addition to the requirements from [last week's project](./virtual-pet):
 - [ ] include instance variables representing:
@@ -122,7 +122,7 @@ Clean code deals with how your code is written.  Is it readable, easy to underst
 
 - Keep method chains to a minimum. (Three chained methods in the entire project are permissable.)
 - Formatted code - This is the simplest task, use _CTRL + ALT + L_ to have IntelliJ format your code for you.
-- Variable and Method Names - Variables and method names should inform the reader what the purpose of the variable or method is.  A `feed()` method that affects the `hunger` field variable in your `VirtualPet` class is an example of good naming.
+- Variable and Method Names - Variables and method names should inform the reader what the purpose of the variable or method is.  A `feed()` method that affects the `hunger` field variable in your `shelter.VirtualPet` class is an example of good naming.
 - If you use descriptive method and variable names, your reliance on comments can be reduced.  And you should never leave blocks of commented out code in your committed code. 
 
 
